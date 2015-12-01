@@ -37,5 +37,7 @@
 
 ### Day 1:
 Input is String of '(' and ')' characters. '(' is +1, ')' is -1.
+
 **P1:** add up total of input
+
 **P2:** find index (starting from 1) of first instance where running total = -1
