@@ -43,5 +43,4 @@ if __name__ == '__main__':
     # testMain()
     data = getFileLines("d02in.txt")
     result = problem(data)
-    print("Result: " + str(result))
 
