@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 2
+**Total Score:** 4
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
