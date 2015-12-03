@@ -9,7 +9,7 @@
 |:---:|:--------:|:--------:|:----- |
 | 1 | x | x | Python |
 | 2 | x | x | Python |
-| 3 | | | |
+| 3 | x | x | Python |
 | 4 | | | |
 | 5 | | | |
 | 6 | | | |
@@ -49,3 +49,10 @@ dimensions.
 
 Each solution has a formula to calculate required paper or ribbon.
 Final answer for each is sum across all boxes
+
+
+### Day 3:
+Input is list of characters each corresponding to a vector (up, down, left, right). Each instruction moves a current position vector, and that position is added to a set. Coordinates can be visited multiple times, but are only listed once in the set.
+
+**P1**: Output length of set at completion, number of unique locations visited
+**P2**: Same as P1 but use 2 locations, and alternate instructions to one position or the other. every visited position is still added to the set. output is still number of unique coordinates visited.
