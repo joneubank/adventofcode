@@ -188,6 +188,10 @@ Input: d07i.txt
         instruction.ivalue = i1value;
     };
 
+
+    /*
+        Read inputs and evaluate circuit
+    */
     var rl = require('readline').createInterface({
         input: require('fs').createReadStream('d07i.txt')
     });
