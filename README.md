@@ -70,6 +70,7 @@ Mining for hashcodes. Given half an input, find an integer for the second half t
 Regex Puzzles, find number of the inputs that match the rules. With multiple rules, test each independently for each input and only add to count if each test passes.
 
 **P1**: 3 vowels, a double letter, exclude strings
+
 **P2**: Repeated double letter, pattern with "aba"
 
 ### Day 6:
@@ -78,6 +79,7 @@ Regex Puzzles, find number of the inputs that match the rules. With multiple rul
 Matrix of values updated based on list of instructions that must be parsed. Parse each instruction and modify matrix appropriately then find sum in the matrix.
 
 **P1**: Turn on and off or toggle "lights"
+
 **P2**: Each light has a brightness value that goes up (+1, or +2) or down (-1, never less than 0)
 
 ### Day 7:
@@ -86,4 +88,5 @@ Amazing puzzle, got to use a recursive bottom up solving approach.
 Given a set of instructions for wiring 16-bit binary logic gates, solve the signal received at a specific node in the circuit. Code up an instruction data model, parse each instruction and store in a list as outputLabel={instructions for solving outputValue}. To get output value, you need to getValue of the inputs, if they havent been calculated you will get the value of their inputs, which will need to be calculated, and so on until all required nodes have been solved.
 
 **P1**: Solve for a node
+
 **P2**: Solve for a node, reset the circuit with output of that as the set value for a specific node, resolve for a node
