@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 16
+**Total Score:** 17
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -15,7 +15,7 @@
 | 6 | x | x | Node.js, require('readline') for input reading|
 | 7 | x | x | Node.js |
 | 8 | x | x | Node.js |
-| 9 | | | |
+| 9 | x | | Node.js |
 | 10 | | | |
 | 11 | | | |
 | 12 | | | |
@@ -96,3 +96,8 @@ Lame replacing and counting for simple escape character encoding.
 
 **P1**: Decode
 **P2**: Encode
+
+### Day 9
+Traveling Salesman Problem - Small enough we can brute force
+
+**P1**: Simple version of problem, test all routes and pick shortest
