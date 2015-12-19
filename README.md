@@ -11,8 +11,8 @@
 | 2 | x | x | Python |
 | 3 | x | x | Python |
 | 4 | x | x | Python, hashlib library for md5 generation |
-| 5 | | | |
-| 6 | | | |
+| 5 | x | x | Python, re regex puzzle |
+| 6 | x | x | nodeJS, require('readline') for input reading|
 | 7 | | | |
 | 8 | | | |
 | 9 | | | |
@@ -65,3 +65,18 @@ Mining for hashcodes. Given half an input, find an integer for the second half t
 **P1**: pattern to match was 5 leading 0's : "00000"
 
 **P1**: pattern to match was 6 leading 0's : "000000"
+
+### Day 5:
+Regex Puzzles, find number of the inputs that match the rules. With multiple rules, test each independently for each input and only add to count if each test passes.
+
+**P1**: 3 vowels, a double letter, exclude strings
+**P2**: Repeated double letter, pattern with "aba"
+
+### Day 6:
+*Switching to JS for next few problems to practice different scripting language. Scripts running on nodeJS.*
+
+Matrix of values updated based on list of instructions that must be parsed. Parse each instruction and modify matrix appropriately then find sum in the matrix.
+
+**P1**: Turn on and off or toggle "lights"
+**P2**: Each light has a brightness value that goes up (+1, or +2) or down (-1, never less than 0)
+
