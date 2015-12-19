@@ -12,8 +12,8 @@
 | 3 | x | x | Python |
 | 4 | x | x | Python, hashlib library for md5 generation |
 | 5 | x | x | Python, re regex puzzle |
-| 6 | x | x | nodeJS, require('readline') for input reading|
-| 7 | | | |
+| 6 | x | x | Node.js, require('readline') for input reading|
+| 7 | | | Node.js |
 | 8 | | | |
 | 9 | | | |
 | 10 | | | |
