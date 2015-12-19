@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 17
+**Total Score:** 18
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -15,7 +15,7 @@
 | 6 | x | x | Node.js, require('readline') for input reading|
 | 7 | x | x | Node.js |
 | 8 | x | x | Node.js |
-| 9 | x | | Node.js |
+| 9 | x | x | Node.js |
 | 10 | | | |
 | 11 | | | |
 | 12 | | | |
@@ -98,6 +98,7 @@ Lame replacing and counting for simple escape character encoding.
 **P2**: Encode
 
 ### Day 9
-Traveling Salesman Problem - Small enough we can brute force
+Traveling Salesman Problem - Small enough we can brute force. Write a method to find permutations of list and check distance for each permutation. There's a neat recursive method for finding permutations here with a callback to execute code when each permutation is found.
 
-**P1**: Simple version of problem, test all routes and pick shortest
+**P1**: Simple version of problem, test all routes, if longer than current shortest then stop checking and go to next permutation
+**P2**: Same as P1 but find the longest route.
