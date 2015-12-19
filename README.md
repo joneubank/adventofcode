@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 12
+**Total Score:** 13
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -13,7 +13,7 @@
 | 4 | x | x | Python, hashlib library for md5 generation |
 | 5 | x | x | Python, re regex puzzle |
 | 6 | x | x | Node.js, require('readline') for input reading|
-| 7 | | | Node.js |
+| 7 | x | | Node.js |
 | 8 | | | |
 | 9 | | | |
 | 10 | | | |

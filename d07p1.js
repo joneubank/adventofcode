@@ -1,6 +1,11 @@
 /*
+Advent of Code
+Day 7
+Problem 1
 
+Input: d07i.txt
 */
+
 (function()
 {
 'use strict';

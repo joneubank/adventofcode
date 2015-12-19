@@ -1,12 +1,10 @@
 /*
 Day 6
-Problem 1
+Problem 2
 
 Input: d06i.txt
-
-Switching Scripting Languages to JS for
-
 */
+
 (function(){
 'use strict';
 
