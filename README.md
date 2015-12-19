@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 13
+**Total Score:** 14
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -13,7 +13,7 @@
 | 4 | x | x | Python, hashlib library for md5 generation |
 | 5 | x | x | Python, re regex puzzle |
 | 6 | x | x | Node.js, require('readline') for input reading|
-| 7 | x | | Node.js |
+| 7 | x | x | Node.js |
 | 8 | | | |
 | 9 | | | |
 | 10 | | | |
@@ -80,3 +80,10 @@ Matrix of values updated based on list of instructions that must be parsed. Pars
 **P1**: Turn on and off or toggle "lights"
 **P2**: Each light has a brightness value that goes up (+1, or +2) or down (-1, never less than 0)
 
+### Day 7:
+Amazing puzzle, got to use a recursive bottom up solving approach.
+
+Given a set of instructions for wiring 16-bit binary logic gates, solve the signal received at a specific node in the circuit. Code up an instruction data model, parse each instruction and store in a list as outputLabel={instructions for solving outputValue}. To get output value, you need to getValue of the inputs, if they havent been calculated you will get the value of their inputs, which will need to be calculated, and so on until all required nodes have been solved.
+
+**P1**: Solve for a node
+**P2**: Solve for a node, reset the circuit with output of that as the set value for a specific node, resolve for a node

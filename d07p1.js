@@ -4,6 +4,8 @@ Day 7
 Problem 2
 
 Input: d07i.txt
+
+Note: all values are 16 bit hence liberal usage of "& 65535"
 */
 
 (function()
