@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 22
+**Total Score:** 24
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -18,7 +18,7 @@
 | 9 | x | x | Node.js |
 | 10 | x | x | Node.js |
 | 11 | x | x | Node.js |
-| 12 | | | |
+| 12 | x | x | Node.js |
 | 13 | | | |
 | 14 | | | |
 | 15 | | | |
@@ -108,3 +108,6 @@ Simple string manipulation, repeat for x steps and print answer. Both problems c
 
 ### Day 11
 Alpha string incrementing letters. Testing each combination to see if it passes a set of regex/pattern rules. Both problems combined in one file as its the same problem twice.
+
+### Day 12
+JSON format input, recursively loop through object to sum all numbers that are found. Part 2 involves checking for specific values to filter objects from being added to the total.
