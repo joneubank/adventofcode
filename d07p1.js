@@ -97,11 +97,11 @@
         input: require('fs').createReadStream('d07i.txt')
     });
 
-    rl.on('line', record);
+    rl.on('line', addInstruction);
 
     rl.on('close', function()
     {
-        console.log("Answer: " + get_sum());
+        console.log(instructions);
     });
 
 })();
