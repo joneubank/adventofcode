@@ -1,7 +1,7 @@
 /*
 Advent of Code
 Day 7
-Problem 1
+Problem 2
 
 Input: d07i.txt
 */
@@ -10,22 +10,51 @@ Input: d07i.txt
 {
 'use strict';
 
+    /*
+    *   getValue(instruction)
+    *   Return the value of the provided instruction. If already calculated,
+    *       then use calculated value, otherwise, calculate from inputs.
+    *
+    *   Calculation is performed by a method in the operations object. The
+    *       specific method called is based on the .operation value of the
+    *       provided instrcution object.
+    *
+    *   The operation will call getValue on the inputs to this instrcution. If
+    *       they have not been calculated previously than they will first be
+    *       calculated before this instruction can be evaluated. This will
+    *       create a stack of getValue calls until all required inputs
+    *       in the circuit have been resolved.
+    */
     var getValue = function(instruction){
-        console.log(instruction.out);
+        console.log(instruction.outputLabel);
 
-        if(instruction.ivalue === null)
+        if(instruction.outputValue === null)
         {
             var op = instruction.operation;
             operations[op](instruction);
 
         }
 
-        return instruction.ivalue;
+        return instruction.outputValue;
     };
 
+    /* instructions:
+    *   * set of data objects with the information on each instruction
+    *   * each instruction added using addInstruction on a line from the inputs
+    *   * the key for each instruction is the output node's label
+    *   * form of each instruction is, based on : x AND y -> a
+    *    {
+            outputLabel : "a", // output node label
+            i1 : "x", // input 1 label, or value if provided
+            i2 : "y", // input 2 label
+            operation : "AND", // used for operation method label
+                               //  to get node value
+            outputValue : null // calculated output value, null if not calc'ed
+         }
+    */
+
+
     var instructions = {};
-
-
     var addInstruction = function(text)
     {
         var data = {};
@@ -34,14 +63,14 @@ Input: d07i.txt
 
         data.i1 = "";
         data.i2 = "";
-        data.ivalue = null;
+        data.outputValue = null;
         data.operation = "";
 
         //PARSING TIME!
         var split = text.split(" ");
 
         var outputLabel = split[split.length-1];
-        data.out = outputLabel;
+        data.outputLabel = outputLabel;
 
         if (split.length === 3)
         {
@@ -54,7 +83,7 @@ Input: d07i.txt
             } else
             {
                 //direct value apply
-                data.ivalue = parseInt(split[0]) & 65535;
+                data.outputValue = parseInt(split[0]) & 65535;
             }
 
         } else if (split.length === 4)
@@ -77,7 +106,14 @@ Input: d07i.txt
         instructions[outputLabel] = data;
     };
 
-    // pass an instuction to an operation method to calculate its value
+    /*
+    *   operations stores a list of functions identified with keys from the
+    *       instruction set for each operation.
+    *
+    *   The function will calculate the outputValue for the provided
+    *       instruction.
+    *
+    */
     var operations = {};
     operations.AND = function(instruction)
     {
@@ -108,7 +144,7 @@ Input: d07i.txt
             i2value = label2;
         }
 
-        instruction.ivalue = (i1value & i2value) & 65535;
+        instruction.outputValue = (i1value & i2value) & 65535;
     };
 
     operations.OR = function(instruction)
@@ -141,7 +177,7 @@ Input: d07i.txt
         }
 
 
-        instruction.ivalue = (i1value | i2value) & 65535;
+        instruction.outputValue = (i1value | i2value) & 65535;
     };
 
     operations.RSHIFT = function(instruction)
@@ -152,7 +188,7 @@ Input: d07i.txt
 
         var i1value = getValue(i1);
 
-        instruction.ivalue = (i1value >> instruction.i2) & 65535;
+        instruction.outputValue = (i1value >> instruction.i2) & 65535;
     };
 
     operations.LSHIFT = function(instruction)
@@ -163,7 +199,7 @@ Input: d07i.txt
 
         var i1value = getValue(i1);
 
-        instruction.ivalue = (i1value << instruction.i2) & 65535;
+        instruction.outputValue = (i1value << instruction.i2) & 65535;
     };
 
     operations.NOT = function(instruction)
@@ -174,7 +210,7 @@ Input: d07i.txt
 
         var i1value = getValue(i1);
 
-        instruction.ivalue = (~ i1value) & 65535;
+        instruction.outputValue = (~ i1value) & 65535;
     };
 
     operations.EQUAL = function(instruction)
@@ -185,7 +221,7 @@ Input: d07i.txt
 
         var i1value = getValue(i1);
 
-        instruction.ivalue = i1value;
+        instruction.outputValue = i1value;
     };
 
 
@@ -200,9 +236,10 @@ Input: d07i.txt
 
     rl.on('close', function()
     {
-        var out = getValue(instructions["a"]);
+        var answer = getValue(instructions["a"]);
         console.log(instructions);
-        console.log(out);
+        console.log(answer);
+
     });
 
 })();

@@ -1,11 +1,9 @@
 /*
+Advent of Code
 Day 6
 Problem 1
 
 Input: d06i.txt
-
-Switching Scripting Languages to JS for
-
 */
 (function(){
 'use strict';
