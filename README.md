@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 14
+**Total Score:** 16
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -14,7 +14,7 @@
 | 5 | x | x | Python, re regex puzzle |
 | 6 | x | x | Node.js, require('readline') for input reading|
 | 7 | x | x | Node.js |
-| 8 | | | |
+| 8 | x | x | Node.js |
 | 9 | | | |
 | 10 | | | |
 | 11 | | | |
@@ -90,3 +90,9 @@ Given a set of instructions for wiring 16-bit binary logic gates, solve the sign
 **P1**: Solve for a node
 
 **P2**: Solve for a node, reset the circuit with output of that as the set value for a specific node, resolve for a node
+
+### Day 8
+Lame replacing and counting for simple escape character encoding.
+
+**P1**: Decode
+**P2**: Encode
