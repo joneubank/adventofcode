@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 18
+**Total Score:** 22
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -16,8 +16,8 @@
 | 7 | x | x | Node.js |
 | 8 | x | x | Node.js |
 | 9 | x | x | Node.js |
-| 10 | | | |
-| 11 | | | |
+| 10 | x | x | Node.js |
+| 11 | x | x | Node.js |
 | 12 | | | |
 | 13 | | | |
 | 14 | | | |
@@ -102,3 +102,9 @@ Traveling Salesman Problem - Small enough we can brute force. Write a method to 
 
 **P1**: Simple version of problem, test all routes, if longer than current shortest then stop checking and go to next permutation
 **P2**: Same as P1 but find the longest route.
+
+### Day 10
+Simple string manipulation, repeat for x steps and print answer. Both problems combined in single file
+
+### Day 11
+Alpha string incrementing letters. Testing each combination to see if it passes a set of regex/pattern rules. Both problems combined in one file as its the same problem twice.
