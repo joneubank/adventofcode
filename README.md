@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 27
+**Total Score:** 28
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -20,7 +20,7 @@
 | 11 | x | x | Node.js |
 | 12 | x | x | Node.js |
 | 13 | x | x | Node.js |
-| 14 | x | | Node.js |
+| 14 | x | x | Node.js |
 | 15 | | | |
 | 16 | | | |
 | 17 | | | |
@@ -114,5 +114,8 @@ JSON format input, recursively loop through object to sum all numbers that are f
 
 ### Day 13
 Another permutations puzzle. Test all the arrangements and find the max sum.
+
+### Day 14
+Reindeer race. Simple math applied to find winner. This is not an elegant solution, just quick and dirty.
 
 
