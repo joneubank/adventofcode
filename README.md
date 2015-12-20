@@ -5,7 +5,7 @@
 
 **Total Score:** 28
 
-| Day | Puzzel 1 | Puzzel 2 | Tools |
+| Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
 | 1 | x | x | Python |
 | 2 | x | x | Python |
