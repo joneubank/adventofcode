@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 24
+**Total Score:** 26
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -19,7 +19,7 @@
 | 10 | x | x | Node.js |
 | 11 | x | x | Node.js |
 | 12 | x | x | Node.js |
-| 13 | | | |
+| 13 | x | x | Node.js |
 | 14 | | | |
 | 15 | | | |
 | 16 | | | |
@@ -111,3 +111,8 @@ Alpha string incrementing letters. Testing each combination to see if it passes 
 
 ### Day 12
 JSON format input, recursively loop through object to sum all numbers that are found. Part 2 involves checking for specific values to filter objects from being added to the total.
+
+### Day 13
+Another permutations puzzle. Test all the arrangements and find the max sum.
+
+
