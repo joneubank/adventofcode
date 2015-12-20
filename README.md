@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 26
+**Total Score:** 27
 
 | Day | Puzzel 1 | Puzzel 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -20,7 +20,7 @@
 | 11 | x | x | Node.js |
 | 12 | x | x | Node.js |
 | 13 | x | x | Node.js |
-| 14 | | | |
+| 14 | x | | Node.js |
 | 15 | | | |
 | 16 | | | |
 | 17 | | | |

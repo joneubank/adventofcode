@@ -1,7 +1,7 @@
 /*
 Advent of Code
 Day 13
-Problem 1
+Problem 2
 
 Input: d13i.txt
 */
