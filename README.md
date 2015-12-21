@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 30
+**Total Score:** 32
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -22,7 +22,7 @@
 | 13 | x | x | Node.js |
 | 14 | x | x | Node.js |
 | 15 | x | x | Node.js |
-| 16 | | | |
+| 16 | x | x | Node.js |
 | 17 | | | |
 | 18 | | | |
 | 19 | | | |
@@ -123,3 +123,7 @@ Recipe problem with constraints. Find maximum of 2D matrix system. There is prob
 
 P2 is P1 with one additional qualifier for a valid solution (only consider a recipe's total score if it has exact correct number of calories)
 
+### Day 16
+Compare input object to list of partial objects. If inequality is found reject the input, keep only the one match. Part two changes the equality conditions.
+
+Part 2 gave two solutions, the same as part 1 and a new solution. I didn't spend time solving what I missed that allowed for 2 solutions, I just submitted the new one and it was correct.
