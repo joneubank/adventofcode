@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 35
+**Total Score:** 36
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -24,7 +24,7 @@
 | 15 | x | x | Node.js |
 | 16 | x | x | Node.js |
 | 17 | x | x | Node.js |
-| 18 | x | | Node.js |
+| 18 | x | x | Node.js |
 | 19 | | | |
 | 20 | | | |
 | 21 | | | |
