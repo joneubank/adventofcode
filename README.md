@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 28
+**Total Score:** 30
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -21,7 +21,7 @@
 | 12 | x | x | Node.js |
 | 13 | x | x | Node.js |
 | 14 | x | x | Node.js |
-| 15 | | | |
+| 15 | x | x | Node.js |
 | 16 | | | |
 | 17 | | | |
 | 18 | | | |
@@ -118,4 +118,8 @@ Another permutations puzzle. Test all the arrangements and find the max sum.
 ### Day 14
 Reindeer race. Simple math applied to find winner. This is not an elegant solution, just quick and dirty.
 
+### Day 15
+Recipe problem with constraints. Find maximum of 2D matrix system. There is probably a sensible math way to do this but I just brute forced it since the number of variables was quite small.
+
+P2 is P1 with one additional qualifier for a valid solution (only consider a recipe's total score if it has exact correct number of calories)
 
