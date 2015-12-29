@@ -27,7 +27,7 @@
 | 18 | x | x | Node.js |
 | 19 | x | | Node.js |
 | 20 | x | x | Node.js |
-| 21 | | | |
+| 21 | x | x | Node.js |
 | 22 | | | |
 | 23 | | | |
 | 24 | | | |
@@ -139,3 +139,7 @@ So far unable to solve P2 since brute force is too long and I haven't come up wi
 
 ### Day 20
 Common Factor counting and summation. Problem 2 requires filtering the common factor list so that factor * x = num where x <= 50.
+
+### Day 21
+RPG Simulator! Equip player, calc stats, determine if they win the fight. Small number of permutations so just iterate all of them to find the ones that match the puzzle requirements.
+

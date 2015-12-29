@@ -1,7 +1,7 @@
 /*
 Advent of Code
-Day 22
-Problem 1
+Day 21
+Problem 1 & 2
 
 Input: see boss below (dmg 8, hp 104, arm 1)
 */
@@ -35,7 +35,6 @@ Longsword    40     7
 Greataxe     74     8
 */
     var weapons = [
-        createItem(0,  0, 0),
         createItem(8,  4, 0),
         createItem(10, 5, 0),
         createItem(25, 6, 0),
@@ -51,6 +50,7 @@ Splintmail   53     0       3
 Bandedmail   75     0       4
 Platemail   102     0       5
     */
+    //include blank option since this is optional
     var armors = [
         createItem(0,  0,  0),
         createItem(13, 0,  1),
@@ -69,7 +69,7 @@ Defense +1   20     0       1
 Defense +2   40     0       2
 Defense +3   80     0       3
 */
-
+    //include 2 blanks since this is optional
     var rings = [
         createItem(0,   0, 0),
         createItem(0,   0, 0),
@@ -106,6 +106,7 @@ Defense +3   80     0       3
     }
 
     var lowestSuccessCost = 1000;
+    var highestFailCost = 0;
 
     for(var wpn=0; wpn < weapons.length; wpn++)
     {
@@ -118,18 +119,30 @@ Defense +3   80     0       3
                     var player = buildPlayer(weapons[wpn], armors[armor], rings[r1], rings[r2]);
 
                     if(
-                        player.dmg >= boss.arm &&
+                        player.dmg-boss.arm > 0 &&
                         player.cost < lowestSuccessCost &&
                         turnsToKillBoss(player) <= turnsToKillPlayer(player)
                       )
                     {
                         lowestSuccessCost = player.cost;
                     }
+
+                    if(
+                        boss.dmg-player.arm > 0 &&
+                        player.cost > highestFailCost &&
+                        turnsToKillBoss(player) > turnsToKillPlayer(player)
+                      )
+                    {   player.win = turnsToKillBoss(player);
+                        player.lose = turnsToKillPlayer(player);
+                        console.log(player);
+                        highestFailCost = player.cost;
+                    }
                 }
             }
         }
     }
 
-    console.log("Best Cost: " + lowestSuccessCost);
+    console.log("Best Win Cost: " + lowestSuccessCost);
+    console.log("Worst Lose Cost: " + highestFailCost);
 
 })();
