@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 39
+**Total Score:** 43
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -28,7 +28,7 @@
 | 19 | x | | Node.js |
 | 20 | x | x | Node.js |
 | 21 | x | x | Node.js |
-| 22 | | | |
+| 22 | x | x | Node.js |
 | 23 | | | |
 | 24 | | | |
 | 25 | | | |
@@ -143,3 +143,5 @@ Common Factor counting and summation. Problem 2 requires filtering the common fa
 ### Day 21
 RPG Simulator! Equip player, calc stats, determine if they win the fight. Small number of permutations so just iterate all of them to find the ones that match the puzzle requirements.
 
+### Day 22
+RPG Wizard Spell selector... Breadth first search through sequence of actions to take, identifying winning pattern with the lowest cost. Takes 7 steps through brute force, no more than 10000 saved sequences so this worked fine.
