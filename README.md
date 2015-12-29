@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 45
+**Total Score:** 47
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -30,7 +30,7 @@
 | 21 | x | x | Node.js |
 | 22 | x | x | Node.js |
 | 23 | x | x | Node.js |
-| 24 | | | |
+| 24 | x | x | Node.js |
 | 25 | | | |
 
 ## Puzzles and Notes
@@ -148,3 +148,8 @@ RPG Wizard Spell selector... Breadth first search through sequence of actions to
 
 ### Day 23
 Read instructions, apply logic to stored numbers. Nothing fancy here, just implementation. Only one file added because P2 is just P1 with different starting conditions.
+
+### Day 24
+Combinations problem. Can reduce the run time by starting with the options sorted highest to lowest since we most want to find the group with fewest items, and we refuse to check any groupings with more packages than our best solution so far.
+
+For part 2, its obvious we should have an extra system to make it recursive based on the number of groups desired, but it was faster in this case just to copy paste the same pattern for the extra group.
