@@ -31,7 +31,7 @@
 | 22 | x | x | Node.js |
 | 23 | x | x | Node.js |
 | 24 | x | x | Node.js |
-| 25 | | | |
+| 25 | x | | Node.js |
 
 ## Puzzles and Notes
 
@@ -153,3 +153,6 @@ Read instructions, apply logic to stored numbers. Nothing fancy here, just imple
 Combinations problem. Can reduce the run time by starting with the options sorted highest to lowest since we most want to find the group with fewest items, and we refuse to check any groupings with more packages than our best solution so far.
 
 For part 2, its obvious we should have an extra system to make it recursive based on the number of groups desired, but it was faster in this case just to copy paste the same pattern for the extra group.
+
+### Day 25
+Write method to turn x,y into sequence number based off grid pattern. iterate simple pattern a number of times based on the sequence number received in the inputs. Done. Part 2 is blocked til I resolve Day 19.
