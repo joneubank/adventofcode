@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 37
+**Total Score:** 39
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -26,7 +26,7 @@
 | 17 | x | x | Node.js |
 | 18 | x | x | Node.js |
 | 19 | x | | Node.js |
-| 20 | | | |
+| 20 | x | x | Node.js |
 | 21 | | | |
 | 22 | | | |
 | 23 | | | |
@@ -133,3 +133,9 @@ Combinations of jars to make a set volume. Recursive combinations method, simila
 
 ### Day 18
 Conway's game of life implementation.
+
+### Day 19
+So far unable to solve P2 since brute force is too long and I haven't come up with a suitable way to reduce the checks made at every step.
+
+### Day 20
+Common Factor counting and summation. Problem 2 requires filtering the common factor list so that factor * x = num where x <= 50.
