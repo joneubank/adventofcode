@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 43
+**Total Score:** 45
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
@@ -29,7 +29,7 @@
 | 20 | x | x | Node.js |
 | 21 | x | x | Node.js |
 | 22 | x | x | Node.js |
-| 23 | | | |
+| 23 | x | x | Node.js |
 | 24 | | | |
 | 25 | | | |
 
@@ -145,3 +145,6 @@ RPG Simulator! Equip player, calc stats, determine if they win the fight. Small 
 
 ### Day 22
 RPG Wizard Spell selector... Breadth first search through sequence of actions to take, identifying winning pattern with the lowest cost. Takes 7 steps through brute force, no more than 10000 saved sequences so this worked fine.
+
+### Day 23
+Read instructions, apply logic to stored numbers. Nothing fancy here, just implementation. Only one file added because P2 is just P1 with different starting conditions.
