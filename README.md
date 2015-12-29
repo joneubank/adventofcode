@@ -3,7 +3,7 @@
 
 ## Completion Summary
 
-**Total Score:** 47
+**Total Score:** 48
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
