@@ -1,7 +1,7 @@
 /*
 Advent of Code
 Day 23
-Problem 1
+Problem 1 & 2
 
 Input: d23i.txt
 */
