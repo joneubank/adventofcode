@@ -15,11 +15,16 @@ Input: d19i.txt
     var inputLine = function(text)
     {
         var split = text.split(" ");
+
         if(split.length === 1)
         {
             molecule = text;
         } else {
-            reactions.push([split[0],split[2]]);
+            reactions.push(
+
+                [  split[0] ,  split[2]  ]
+
+                );
         }
     };
 
@@ -61,9 +66,11 @@ Input: d19i.txt
 
     rl.on('close', function()
     {
+
         for(var i = 0; i < reactions.length; i++)
         {
             checkReaction(reactions[i]);
+            // console.log(i + " = Input:" + reactions[i][0] + " - Output:" + reactions[i][1]);
         }
         console.log(outputs.length);
     });
