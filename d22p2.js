@@ -1,7 +1,7 @@
 /*
 Advent of Code
 Day 22
-Problem 1
+Problem 2
 
 Input: boss = {hp:51, dmg: 9;}
 */
