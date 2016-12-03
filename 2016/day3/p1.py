@@ -9,6 +9,14 @@ from everyday import utils
 INPUT_FILE = 'input.txt'
 
 
+def valid_triangle(sides):
+    biggest = max(sides)
+    if biggest >= sum(sides) - biggest:
+        return True
+
+    return False
+
+
 def main():
     input_lines = utils.get_input_lines(INPUT_FILE)
 
@@ -19,7 +27,7 @@ def main():
         sides = [int(x) for x in line.split()]
 
         biggest = max(sides)
-        if biggest < sum(sides) - biggest:
+        if not valid_triangle(sides):
             count += 1
             valid = False
 
