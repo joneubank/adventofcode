@@ -12,7 +12,7 @@
 |:---:|:--------:|:--------:|:----- |
 | 1 | X | X | NORTH=[0,1], WEST=[-1,0] etc. - determine next direction based on R/L turns |
 | 2 | X | X | More cartesian coordinate movements |
-| 3 |  |  |  |
+| 3 | X | X | Easiest yet. Triangle side validations. |
 
 
 ## Puzzles and Notes
@@ -27,3 +27,11 @@ Give R/L turn and number of steps, find final destination on grid
 
 ### Day 2:
 Given U/D/L/R that represent movements around a cartesian grid. Ignore directions that move you off the limited size grid.
+
+### Day 3:
+Given sets of triangle sides, apply simple validation to confirm they would form a valid triangle.
+
+**NOTE:** The descriptions states that the sum of the two smaller sides must be greater than the largest side, but the solution requires greater OR EQUAL TO.
+
+Part two has an interesting twist, requiring the input to be read in columns. Simply accomplished by reading in line at a time but writing into temporary triangles that are added to the triangle list after 3 sides are added in.
+ 

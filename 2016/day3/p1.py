@@ -12,9 +12,9 @@ INPUT_FILE = 'input.txt'
 def valid_triangle(sides):
     biggest = max(sides)
     if biggest >= sum(sides) - biggest:
-        return True
+        return False
 
-    return False
+    return True
 
 
 def main():
@@ -23,13 +23,12 @@ def main():
     count = 0
 
     for index, line in enumerate(input_lines):
-        valid = True
+        valid = False
         sides = [int(x) for x in line.split()]
 
-        biggest = max(sides)
-        if not valid_triangle(sides):
+        if valid_triangle(sides):
             count += 1
-            valid = False
+            valid = True
 
         print("{}: {} - valid:{}".format(index, line, valid))
 
