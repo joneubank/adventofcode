@@ -6,7 +6,7 @@
 
 ## Progress Summary
 
-**Total Score:** 0
+**Total Score:** 2
 
 | Day | Puzzle 1 | Puzzle 2 | Notes |
 |:---:|:--------:|:--------:|:----- |
