@@ -6,7 +6,7 @@
 
 ## Progress Summary
 
-**Total Score:** 48
+**Total Score:** 0
 
 | Day | Puzzle 1 | Puzzle 2 | Tools |
 |:---:|:--------:|:--------:|:----- |
