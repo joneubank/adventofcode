@@ -19,6 +19,7 @@ Input: d19i.txt
         if(split.length === 1)
         {
             molecule = text;
+
         } else {
             reactions.push(
 
@@ -59,7 +60,7 @@ Input: d19i.txt
         Read inputs and evaluate circuit
     */
     var rl = require('readline').createInterface({
-        input: require('fs').createReadStream('d19i.txt')
+        input: require('fs').createReadStream('d19isample.txt')
     });
 
     rl.on('line', inputLine);

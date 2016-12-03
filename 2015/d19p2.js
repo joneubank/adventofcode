@@ -13,21 +13,19 @@ Input: d19i.txt
     var startingMolecule = 'e';
 
     var reactions = [];
-    var targetMolecule = 'e';
+    var targetMolecule = null;
     var inputLine = function(text)
     {
         var split = text.split(" ");
         if(split.length === 1)
         {
-            startingMolecule = text;
+            targetMolecule = text;
         } else {
-            reactions.push([split[2],split[0]]);
+            reactions.push([split[0],split[2]]);
         }
     };
 
-    var outputs = [];
-    var searchIndex = 0;
-    var indexMax = 0;
+    var outputs = [startingMolecule];
     var checkReaction = function(molecule, reaction, lastOutputs)
     {
         var index = 0;
@@ -42,7 +40,7 @@ Input: d19i.txt
                             .concat(molecule.slice(index+reaction[0].length));
                 // console.log(output);
 
-                if(outputs.indexOf(output) === -1 && (output.indexOf('e') < 0 || output.length === 1))
+                if(outputs.indexOf(output) === -1 && lastOutputs.indexOf(output) == -1)
                 {
                     outputs.push(output);
                 }
@@ -54,17 +52,17 @@ Input: d19i.txt
 
     var nextStep = function()
     {
+        var current = outputs;
+        outputs = [];
 
         //calculate all next steps
-        var maxIndex = outputs.length;
-        for(var i = searchIndex; i < maxIndex; i++)
+        for(var i = 0; i < current.length; i++)
         {
             for(var j = 0; j < reactions.length; j++)
             {
-                checkReaction(outputs[i], reactions[j], outputs);
+                checkReaction(current[i], reactions[j], current);
             }
         }
-        searchIndex = maxIndex;
 
         //check for target
         if(outputs.indexOf(targetMolecule) == -1)
@@ -79,33 +77,29 @@ Input: d19i.txt
         Read inputs and evaluate circuit
     */
     var rl = require('readline').createInterface({
-        input: require('fs').createReadStream('d19i.txt')
+        input: require('fs').createReadStream('d19isample.txt')
     });
 
     rl.on('line', inputLine);
 
     rl.on('close', function()
     {
-        outputs = [startingMolecule];
         var step = 0;
-        var success = false;
-        while(step < 10000)
-        {
+        while(step < 10000) {
+
             step += 1;
-            var outputsSize = outputs.length;
-            success = nextStep();
-            console.log("Step " + step + ": " + outputs.length + " searchIndex: " + searchIndex);
+            var success = nextStep();
+            console.log("Step " + step + ": " + outputs.length + " - " + outputs[0]);
 
-
-            if(success || outputs.length === outputsSize)
+            if(success)
             {
                 break;
             }
+
         }
-        console.log(outputs.sort(function(a, b){return b.length-a.length;}));
-        console.log("Outputs: " + outputs.length);
-        console.log("Step: " + step);
-        console.log("Success: " + success);
+
+
+        console.log("ANSWER: " + step);
     });
 
 })();

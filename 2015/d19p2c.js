@@ -4,6 +4,8 @@ Day 19
 Problem 1
 
 Input: d19i.txt
+I'm cheating by reading my input and noticing that it is impossible to turn CRn
+into anything else, so we are really dealing with a set of CRn molecules
 */
 
 (function()
@@ -35,7 +37,7 @@ Input: d19i.txt
             if(index >= 0)
             {
                 var output =
-                    molecule.slice(0,index)
+                    molecule.slice(0, index)
                             .concat(reaction[1])
                             .concat(molecule.slice(index+reaction[0].length));
                 // console.log(output);
@@ -49,6 +51,7 @@ Input: d19i.txt
             }
         }
     };
+
 
     var nextStep = function()
     {
@@ -72,7 +75,6 @@ Input: d19i.txt
         return true;
     };
 
-
     /*
         Read inputs and evaluate circuit
     */
@@ -84,21 +86,23 @@ Input: d19i.txt
 
     rl.on('close', function()
     {
-        var step = 0;
-        while(step < 10000)
+        var splits = targetMolecule.split("Rn");
+        var splitTargets = [];
+        for(var i = 1; i < splits.length; i++)
         {
-            step += 1;
-            var success = nextStep();
-            console.log("Step " + step + ": " + outputs.length + " - " + outputs[0]);
+            var chars = splits[i-1].split("");
+            var lastChar = chars.pop();
 
-            if(success)
-            {
-                break;
+            var lastCharIsLower = lastChar == lastChar.toLowerCase();
+
+            var leader = lastChar;
+            if(lastCharIsLower) {
+                leader = chars.pop() + lastChar;
             }
+
+            splitTargets.push(leader + "Rn" + splits[i]);
         }
-
-
-        console.log("ANSWER: " + step);
+        console.log(splitTargets);
     });
 
 })();
