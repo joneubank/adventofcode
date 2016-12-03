@@ -12,9 +12,21 @@ INPUT_FILE = 'input.txt'
 def main():
     input_lines = utils.get_input_lines(INPUT_FILE)
 
+    count = 0
 
     for index, line in enumerate(input_lines):
-        pass
+        valid = True
+        sides = [int(x) for x in line.split()]
+
+        biggest = max(sides)
+        if biggest < sum(sides) - biggest:
+            count += 1
+            valid = False
+
+        print("{}: {} - valid:{}".format(index, line, valid))
+
+    print("Total invalid: {}".format(count))
+
 
 if __name__ == '__main__':
     main()
