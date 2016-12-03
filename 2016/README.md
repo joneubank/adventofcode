@@ -6,7 +6,7 @@
 
 ## Progress Summary
 
-**Total Score:** 4
+**Total Score:** 6
 
 | Day | Puzzle 1 | Puzzle 2 | Notes |
 |:---:|:--------:|:--------:|:----- |
@@ -34,4 +34,3 @@ Given sets of triangle sides, apply simple validation to confirm they would form
 **NOTE:** The descriptions states that the sum of the two smaller sides must be greater than the largest side, but the solution requires greater OR EQUAL TO.
 
 Part two has an interesting twist, requiring the input to be read in columns. Simply accomplished by reading in line at a time but writing into temporary triangles that are added to the triangle list after 3 sides are added in.
- 
