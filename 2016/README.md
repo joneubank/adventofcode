@@ -13,6 +13,7 @@
 | 1 | X | X | NORTH=[0,1], WEST=[-1,0] etc. - determine next direction based on R/L turns |
 | 2 | X | X | More cartesian coordinate movements |
 | 3 | X | X | Easiest yet. Triangle side validations. |
+| 4 | X | X | Lots of string parsing, and sorting of counts. Final step can't be done programatically since they don't tell you the name of the room you are looking for. |
 
 
 ## Puzzles and Notes
@@ -34,3 +35,10 @@ Given sets of triangle sides, apply simple validation to confirm they would form
 **NOTE:** The descriptions states that the sum of the two smaller sides must be greater than the largest side, but the solution requires greater OR EQUAL TO.
 
 Part two has an interesting twist, requiring the input to be read in columns. Simply accomplished by reading in line at a time but writing into temporary triangles that are added to the triangle list after 3 sides are added in.
+
+### Day 4:
+List of encrypted room names with numeric IDs and checksums.
+
+**P1:** Parse the list of names into names, sector_ids and checksums. Count all letters in the room names and sort them by count and alphabetical order, then compare the first five letters in the sorted list to the checksum. Use of re and operator libraries to do the parsing then sorting on multiple properties.
+
+**P2:** This part is easier to code, just apply a character shift algorithm with looping to the beginning of the alphabet. Problem is the final output just shows list of room names, and you manually have to search throught he list for the room name to find which name is "the room where North Pole objects are stored"... Answer was "northpole object storage"... sigh...
