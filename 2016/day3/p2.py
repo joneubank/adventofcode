@@ -6,7 +6,7 @@ Problem : 2
 from everyday import utils
 
 # Since this isn't absolute path, you need to run this file from within this directory
-INPUT_FILE = 'ilana-input.txt'
+INPUT_FILE = 'input.txt'
 
 
 def valid_triangle(sides):
