@@ -11,7 +11,7 @@ INPUT_FILE = 'input.txt'
 
 def split_room_string(room_string):
     room_name = 'nzydfxpc-rclop-qwzhpc-qtylyntyr'
-    sector_id = '769'
+    sector_id = int('769')
     checksum  = 'oshgk'
 
     return room_name, sector_id, checksum
@@ -34,8 +34,7 @@ def main():
             is_valid = True
             valid_checksums.append(sector_id)
 
-        print("{}: {} - is valid: {}".format(index, line, valid))
-        break
+        print("{}: {} - is valid: {}".format(index, line, is_valid))
 
     valid_sectors_sum = sum(valid_checksums)
 
