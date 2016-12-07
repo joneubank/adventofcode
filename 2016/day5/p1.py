@@ -7,8 +7,6 @@ from everyday import utils
 
 from hashlib import md5
 
-# Since this isn't absolute path, you need to run this file from within this directory
-
 INPUT_CODE = 'abbhdwsy'
 
 
