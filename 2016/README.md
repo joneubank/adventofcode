@@ -6,7 +6,7 @@
 
 ## Progress Summary
 
-**Total Score:** 8
+**Total Score:** 10
 
 | Day | Puzzle 1 | Puzzle 2 | Notes |
 |:---:|:--------:|:--------:|:----- |
@@ -14,7 +14,7 @@
 | 2 | X | X | More cartesian coordinate movements |
 | 3 | X | X | Easiest yet. Triangle side validations. |
 | 4 | X | X | Lots of string parsing, and sorting of counts. Final step can't be done programatically since they don't tell you the name of the room you are looking for. |
-
+| 5 | X | X | md5 hash generation |
 
 ## Puzzles and Notes
 
@@ -42,3 +42,6 @@ List of encrypted room names with numeric IDs and checksums.
 **P1:** Parse the list of names into names, sector_ids and checksums. Count all letters in the room names and sort them by count and alphabetical order, then compare the first five letters in the sorted list to the checksum. Use of re and operator libraries to do the parsing then sorting on multiple properties.
 
 **P2:** This part is easier to code, just apply a character shift algorithm with looping to the beginning of the alphabet. Problem is the final output just shows list of room names, and you manually have to search throught he list for the room name to find which name is "the room where North Pole objects are stored"... Answer was "northpole object storage"... sigh...
+
+### Day 5:
+Very similar to Day 4 of 2015. Generate hash codes from incrementing keys until certain patterns are matched.
