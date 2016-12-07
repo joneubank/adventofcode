@@ -1,6 +1,6 @@
-# 2016 P1
+# 2016 Day 1
 
-## Day 1: No Time for a Taxicab
+## No Time for a Taxicab
 
 ### Part 1
 You're airdropped near Easter Bunny Headquarters in a city somewhere. "Near", unfortunately, is as close as you can get - the instructions on the Easter Bunny Recruiting Document the Elves intercepted start here, and nobody had time to work them out further.

@@ -1,6 +1,6 @@
-# 2016 P1
+# 2016 Day 4
 
-## Day 4: Security Through Obscurity
+## Security Through Obscurity
 
 ### Part 1
 Finally, you come across an information kiosk with a list of rooms. Of course, the list is encrypted and full of decoy data, but the instructions to decode the list are barely hidden nearby. Better remove the decoy data first.
