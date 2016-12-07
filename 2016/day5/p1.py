@@ -5,20 +5,30 @@ Problem : 1
 """
 from everyday import utils
 
+from hashlib import md5
 
 # Since this isn't absolute path, you need to run this file from within this directory
-INPUT_FILE = 'input.txt'
 
+INPUT_CODE = 'abbhdwsy'
+
+
+def generate_hash(key):
+    return md5(str(key).encode('utf-8')).hexdigest()
 
 def main():
-    input_lines = utils.get_input_lines(INPUT_FILE)
 
+    index = 0
+    password = ''
 
-    for index, line in enumerate(input_lines):
+    while len(password) < 8:
 
-        print("{}: {}".format(index, line))
-
-    valid_sectors_sum = sum(valid_checksums)
+        test_hash = generate_hash(INPUT_CODE + str(index))
+        if test_hash[:5] == '00000':
+            password += str(test_hash[5])
+            print("{}: {} - Password: {}".format(index, test_hash, password))
+            if index % 100000 == 0:
+                print(index)
+        index += 1
 
 
 if __name__ == '__main__':
