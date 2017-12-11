@@ -15,6 +15,26 @@
 | 3 | X | X | Easiest yet. Triangle side validations. |
 | 4 | X | X | Lots of string parsing, and sorting of counts. Final step can't be done programatically since they don't tell you the name of the room you are looking for. |
 | 5 | X | X | md5 hash generation |
+| 6 |  |  |  |
+| 7 |  |  |  |
+| 8 |  |  |  |
+| 9 |  |  |  |
+| 10 |  |  |  |
+| 11 |  |  |  |
+| 12 |  |  |  |
+| 13 |  |  |  |
+| 14 |  |  |  |
+| 15 |  |  |  |
+| 16 |  |  |  |
+| 17 |  |  |  |
+| 18 |  |  |  |
+| 19 |  |  |  |
+| 20 |  |  |  |
+| 21 |  |  |  |
+| 22 |  |  |  |
+| 23 |  |  |  |
+| 24 |  |  |  |
+| 25 |  |  |  |
 
 ## Puzzles and Notes
 
