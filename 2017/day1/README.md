@@ -1,4 +1,4 @@
-# 2016 Day 1
+# 2017 Day 1
 
 ## [Inverse Captcha](http://adventofcode.com/2017/day/1)
 
